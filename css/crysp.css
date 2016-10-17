@@ -6,20 +6,29 @@ html {
 }
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 60px;
+  margin-bottom: 100px;
 }
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  background-color: #f5f5f5;
+  /* Set the fixed height of the footer here. Must be same as the margin-bottom above */
+  height: 100px;
+  background-color: #222222;
+  /*background-color: #f5f5f5;*/
+  text-align: center;
 }
 
 .welcomeImage {
   max-width: 50%;
   margin: 1em auto;
+}
+
+@media(max-width:767px){
+  .welcomeImage {
+    max-width: 80%;
+    margin: 1em auto;
+}
 }
 
 .container .text-muted {
