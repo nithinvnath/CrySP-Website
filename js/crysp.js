@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	/*Checks the hash ref of url and loads the corresponding section 
+  /*Checks the hash ref of url and loads the corresponding section 
   Input: the location hash (with the #)
   */
   function loadSection(locationHash){
@@ -18,7 +18,7 @@ $(document).ready(function () {
   }
 
   //Check if the URL loaded initially has a location ref and display the corresponding one
-	loadSection(window.location.hash);
+  loadSection(window.location.hash);
 
   //Onclick event for email id. Should be triggered only once
   $('span.encrypted').one('click', function (e){
@@ -68,10 +68,10 @@ $(document).ready(function () {
     }
   }); //End onClick event for nav bar
 
+  //Listens to forward and back button clicks and loads the corresponding section
   window.addEventListener('popstate', function(e) {
     loadSection(document.location.hash);
   });
-
 
   //Hide menu on click for smaller screens
   $('.navbar-collapse ul li a').click(function(){ 
